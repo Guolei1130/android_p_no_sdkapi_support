@@ -1,4 +1,32 @@
 
+# 如何使用这个库
+
+原先想的是只介绍一下原理，但是有的同学好像看了之后还不会使用。因此，接入了jitpack以便使用。
+
+Add it in your root build.gradle at the end of repositories:
+
+```
+allprojects {
+repositories {
+...
+maven { url 'https://jitpack.io' }
+}
+}
+
+```
+Step 2. Add the dependency
+
+```
+dependencies {
+implementation 'com.github.Guolei1130:android_p_no_sdkapi_support:0.1.1'
+}
+
+```
+
+### 用法
+
+1. 可以用PCompat#compat(Class reflectionHelperClz) 将所有的反射操作，用reflectionHelperClz这个类去执行即可
+2. 可以用PCompat#useDefaultReflectHelperClass 所有的反射操作，用ReflectHelper去操作j也可以
 
 
 [Android P 调用隐藏API限制原理](https://mp.weixin.qq.com/s/sktB0x5yBexkn4ORQ1YofA)

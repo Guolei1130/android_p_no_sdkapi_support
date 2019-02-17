@@ -1,1 +1,1 @@
-include ':app', ':lib_method_1', ':lib_method_2'
+include ':app', ':lib_method_1', ':lib_method_2', ':lib'

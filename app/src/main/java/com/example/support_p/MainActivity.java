@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     TextView tv = (TextView) findViewById(R.id.sample_text);
     tv.setText(stringFromJNI());
 
+//    getLifecycle()
+
     ReflectionHelper.testMethod();
     ReflectionHelper.testField();
     findViewById(R.id.test_method).setOnClickListener(new OnClickListener() {

@@ -170,6 +170,14 @@ extern "C" void makeHiddenApiAccessable(JNIEnv *env) {
 
 方法四还是存在一点问题。如果以后把classloader加入到深灰或者黑名单，那就僵硬了。所以，我们不用反射，直接用unsafe去修改。代码这就不贴了。为了得到classloader的偏移量，我们写一个和Class结构一样的类，用这个类得到的classLoader的偏移量和Class是一样的。
 
+补充：
+
+### 方法6 
+
+[田维术](https://zhuanlan.zhihu.com/p/59455212)
+
+VMRuntime.setHiddenApiExemptions 方法
+
 
 ### 注意：
 
